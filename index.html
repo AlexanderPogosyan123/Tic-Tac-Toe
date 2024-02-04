@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        #field td {
+            width: 150px;
+            height: 150px;
+            border: 3px solid black;
+            text-align: center;
+        }
+        h1 {
+            font-size: 50px;
+            color: brown;
+        }
+        button {
+            background-color: aquamarine;
+            font-size: 18px;
+            border: 2px solid black;
+            border-radius: 5%;
+            width: 200px;
+            height: 50px;
+        }
+        .winner-cell {
+            background-color: lightgreen; /* Цвет фона для выигравших ячеек */
+        }
+        .winner-cell:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background-color: red;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body style="background-color:rgb(137, 212, 247);">
+    <h1 id="header" align="center">Tic Tac Toe</h1>
+    <table id="field" align="center">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <div align="center">
+        <button id="start-button" onclick="startGame()">Start Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

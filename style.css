@@ -1,0 +1,26 @@
+    #field {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    td {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+    .win-line {
+        background-color: yellow;
+    }
+
+    #header {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+    }
